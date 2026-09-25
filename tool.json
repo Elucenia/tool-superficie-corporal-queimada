@@ -1,0 +1,324 @@
+{
+  "tool": {
+    "id": "superficie-corporal-queimada",
+    "title": "Superfície corporal queimada (Lund-Browder)",
+    "short": "Percentual de SCQ corrigido pela idade",
+    "desc": "Calcule a superfície corporal queimada (SCQ) pela tabela de Lund-Browder, que corrige cabeça e membros inferiores pela idade, do lactente ao adulto.",
+    "lead": "Estima a porcentagem da superfície corporal com queimadura de 2º e 3º graus, com as proporções de cabeça, coxas e pernas ajustadas pela idade.",
+    "spec": [
+      "cirurgia-plastica",
+      "medicina-de-emergencia",
+      "medicina-intensiva",
+      "pediatria",
+      "cirurgia-pediatrica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "sel",
+        {
+          "opts": {
+            "0": "Menos de 1 ano",
+            "1": "1 a 4 anos",
+            "5": "5 a 9 anos",
+            "10": "10 a 14 anos",
+            "15": "15 anos",
+            "a": "Adulto"
+          }
+        }
+      ],
+      [
+        "cabeca",
+        "Cabeça (face e couro cabeludo)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "pescoco",
+        "Pescoço",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "tronco_ant",
+        "Tronco anterior",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "tronco_post",
+        "Tronco posterior",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "nadegas",
+        "Nádegas (as duas)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "genitais",
+        "Genitais",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "bracos",
+        "Braços (os dois)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "antebracos",
+        "Antebraços (os dois)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "maos",
+        "Mãos (as duas)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "coxas",
+        "Coxas (as duas)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "pernas",
+        "Pernas (as duas)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "pes",
+        "Pés (os dois)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "% da região",
+          "ph": "0",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>Para cada região, informe quanto dela está queimado (2º e 3º graus). A SCQ é a soma de (porcentagem do corpo da região × fração queimada).</p><p>Regiões fixas (% do corpo): pescoço 2; tronco anterior 13; tronco posterior 13; nádegas 5; genitais 1; braços 8; antebraços 6; mãos 5; pés 7. Regiões que variam com a idade (lactente → adulto): <strong>cabeça</strong> 19 → 17 → 13 → 11 → 9 → 7; <strong>coxas</strong> 11 → 13 → 16 → 17 → 18 → 19; <strong>pernas</strong> 10 → 10 → 11 → 12 → 13 → 14.</p>",
+    "table": [
+      [
+        "SCQ",
+        "Significado prático"
+      ],
+      [
+        "≥ 10% no adulto",
+        "Critério de encaminhamento a centro de queimados"
+      ],
+      [
+        "≥ 20% no adulto",
+        "Reposição volêmica formal"
+      ],
+      [
+        "≥ 10% na criança",
+        "Reposição volêmica formal"
+      ]
+    ],
+    "table_note": "Limiares usados em diretrizes internacionais (ISBI, ABA); alguns protocolos usam 15% no adulto.",
+    "tips": [
+      "<strong>Não some o eritema</strong> (queimadura de 1º grau): é o erro mais comum e superestima a reposição.",
+      "Para queimaduras pequenas ou esparsas, use a palma da mão do paciente (com os dedos) como cerca de 1% da superfície corporal.",
+      "A regra dos nove (cabeça 9%, cada membro superior 9%, cada membro inferior 18%, tronco 18% + 18%, períneo 1%) é rápida no adulto, mas erra muito em crianças pequenas, que têm a cabeça proporcionalmente maior.",
+      "Reavalie a SCQ após a limpeza das lesões: a extensão real costuma mudar nas primeiras 24 a 48 horas.",
+      "Com a SCQ, calcule a reposição na fórmula de Parkland."
+    ],
+    "sources": [
+      [
+        "ISBI Practice Guidelines Committee. ISBI Practice Guidelines for Burn Care. Burns, 2016.",
+        "https://doi.org/10.1016/j.burns.2016.05.013"
+      ],
+      [
+        "Lundin K, Alsbjørn B. The 101 percent in Lund-Browder charts: a commentary. Burns, 2013.",
+        "https://doi.org/10.1016/j.burns.2012.08.016"
+      ]
+    ],
+    "cases": [
+      [
+        "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        {
+          "idade": "a",
+          "tronco_ant": 100,
+          "bracos": 50
+        },
+        {
+          "raw": {
+            "scq": 17
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        {
+          "idade": "a",
+          "coxas": 100,
+          "pernas": 100
+        },
+        {
+          "raw": {
+            "scq": 33
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        {
+          "idade": "0",
+          "cabeca": 50
+        },
+        {
+          "raw": {
+            "scq": 9.5
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Criança de 3 anos: cabeça inteira (17) = 17%",
+        {
+          "idade": "1",
+          "cabeca": 100
+        },
+        {
+          "raw": {
+            "scq": 17
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Nenhuma região informada: erro",
+        {
+          "idade": "a"
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}

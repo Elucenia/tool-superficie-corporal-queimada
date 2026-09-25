@@ -1,0 +1,91 @@
+[
+  {
+    "label": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50
+    },
+    "expected": {
+      "raw": {
+        "scq": 17
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+    "input": {
+      "idade": "a",
+      "coxas": 100,
+      "pernas": 100
+    },
+    "expected": {
+      "raw": {
+        "scq": 33
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": "a",
+      "coxas": 100,
+      "pernas": 100
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+    "input": {
+      "idade": "0",
+      "cabeca": 50
+    },
+    "expected": {
+      "raw": {
+        "scq": 9.5
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": "0",
+      "cabeca": 50
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Criança de 3 anos: cabeça inteira (17) = 17%",
+    "input": {
+      "idade": "1",
+      "cabeca": 100
+    },
+    "expected": {
+      "raw": {
+        "scq": 17
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": "1",
+      "cabeca": 100
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Nenhuma região informada: erro",
+    "input": {
+      "idade": "a"
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "idade": "a"
+    },
+    "expandedZeroOptions": []
+  }
+]
