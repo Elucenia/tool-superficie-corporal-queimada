@@ -1,11 +1,11 @@
-/* tool-superficie-corporal-queimada · Elucenia · https://github.com/Elucenia/tool-superficie-corporal-queimada
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-superficie-corporal-queimada · ELUCENIA · https://github.com/Elucenia/tool-superficie-corporal-queimada
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"superficie-corporal-queimada","title":"Superfície corporal queimada (Lund-Browder)","fields":[["idade","Idade","sel",{"opts":{"0":"Menos de 1 ano","1":"1 a 4 anos","5":"5 a 9 anos","10":"10 a 14 anos","15":"15 anos","a":"Adulto"}}],["cabeca","Cabeça (face e couro cabeludo)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["pescoco","Pescoço","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["tronco_ant","Tronco anterior","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["tronco_post","Tronco posterior","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["nadegas","Nádegas (as duas)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["genitais","Genitais","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["bracos","Braços (os dois)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["antebracos","Antebraços (os dois)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["maos","Mãos (as duas)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["coxas","Coxas (as duas)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["pernas","Pernas (as duas)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}],["pes","Pés (os dois)","num",{"min":0,"max":100,"step":1,"unit":"% da região","ph":"0","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

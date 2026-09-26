@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-superficie-corporal-queimada",
   "version": "0.1.0",
-  "description": "Superfície corporal queimada (Lund-Browder) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Superfície corporal queimada (Lund-Browder) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
