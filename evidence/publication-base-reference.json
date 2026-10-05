@@ -1,0 +1,88 @@
+{
+  "id": "superficie-corporal-queimada",
+  "repository": "Elucenia/tool-superficie-corporal-queimada",
+  "branch": "main",
+  "commit": "f50cc4947dadd96c08c561ee658c2db8afa3ef90",
+  "archiveSha256": "c3c14e51d5d1195e41ae6ee0f81c0ed99c7cc31be857dd86202d2adea81b12bf",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3373,
+      "sha": "3bce1259d918861cd31af3749a19afd151d7148a",
+      "sha256": "6fcc747f0391220a73d15a6a7d9a97ef1d22a12b44130f1832bf96110173a8bf"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 977,
+      "sha": "a9e59d07c071d4a95ccbe49473414b09f021b414",
+      "sha256": "cc7deddc56200ac6ddd1e7d80c34fdcbf59519486079c32b614b4283b0f64b41"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1479,
+      "sha": "cfd3fa2320f4585f62f2ee4e6e4daeb5cb5434a9",
+      "sha256": "dcbd1772dd11731be4fe161bda3adf0cdf82a41e6b404aa8f8ff86f8b623f6a5"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1681,
+      "sha": "d5bf2df9bf9983be423510e1af2aad95c4d65d19",
+      "sha256": "5af7290a81b79e6d4cb7875172cd9cfcc0430f3a49c149ab1e02c19578a20819"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

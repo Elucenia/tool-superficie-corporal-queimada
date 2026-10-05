@@ -1,0 +1,364 @@
+{
+  "id": "superficie-corporal-queimada",
+  "at": "2026-10-05T17:30:09.823Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/superficie-corporal-queimada/calculator.js",
+    "bytes": 6841,
+    "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+  },
+  "cases": [
+    {
+      "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+      "input": {
+        "idade": "a",
+        "tronco_ant": 100,
+        "bracos": 50
+      },
+      "obtained": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "17,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 17
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.scq",
+          "expected": 17,
+          "obtained": 17,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.scq",
+          "expected": 17,
+          "obtained": 17,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "17,0",
+          "obtained": "17,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "% SCQ",
+          "obtained": "% SCQ",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+      "input": {
+        "idade": "a",
+        "coxas": 100,
+        "pernas": 100
+      },
+      "obtained": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "33,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 33
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.scq",
+          "expected": 33,
+          "obtained": 33,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.scq",
+          "expected": 33,
+          "obtained": 33,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "33,0",
+          "obtained": "33,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "% SCQ",
+          "obtained": "% SCQ",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+      "input": {
+        "idade": "0",
+        "cabeca": 50
+      },
+      "obtained": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "9,5",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 9.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.scq",
+          "expected": 9.5,
+          "obtained": 9.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.scq",
+          "expected": 9.5,
+          "obtained": 9.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "9,5",
+          "obtained": "9,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "% SCQ",
+          "obtained": "% SCQ",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+      "input": {
+        "idade": "1",
+        "cabeca": 100
+      },
+      "obtained": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "17,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 17
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.scq",
+          "expected": 17,
+          "obtained": 17,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.scq",
+          "expected": 17,
+          "obtained": 17,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "17,0",
+          "obtained": "17,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "% SCQ",
+          "obtained": "% SCQ",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Nenhuma região informada: erro",
+      "input": {
+        "idade": "a"
+      },
+      "obtained": {
+        "error": "Informe o percentual queimado de ao menos uma região.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "Informe o percentual queimado de ao menos uma região.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 103,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

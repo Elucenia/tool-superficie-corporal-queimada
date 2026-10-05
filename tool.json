@@ -5,6 +5,7 @@
     "short": "Percentual de SCQ corrigido pela idade",
     "desc": "Calcule a superfície corporal queimada (SCQ) pela tabela de Lund-Browder, que corrige cabeça e membros inferiores pela idade, do lactente ao adulto.",
     "lead": "Estima a porcentagem da superfície corporal com queimadura de 2º e 3º graus, com as proporções de cabeça, coxas e pernas ajustadas pela idade.",
+    "kind": "Calculadora",
     "spec": [
       "cirurgia-plastica",
       "medicina-de-emergencia",
@@ -12,7 +13,6 @@
       "pediatria",
       "cirurgia-pediatrica"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
@@ -187,32 +187,6 @@
       ]
     ],
     "formula": "<p>Para cada região, informe quanto dela está queimado (2º e 3º graus). A SCQ é a soma de (porcentagem do corpo da região × fração queimada).</p><p>Regiões fixas (% do corpo): pescoço 2; tronco anterior 13; tronco posterior 13; nádegas 5; genitais 1; braços 8; antebraços 6; mãos 5; pés 7. Regiões que variam com a idade (lactente → adulto): <strong>cabeça</strong> 19 → 17 → 13 → 11 → 9 → 7; <strong>coxas</strong> 11 → 13 → 16 → 17 → 18 → 19; <strong>pernas</strong> 10 → 10 → 11 → 12 → 13 → 14.</p>",
-    "table": [
-      [
-        "SCQ",
-        "Significado prático"
-      ],
-      [
-        "≥ 10% no adulto",
-        "Critério de encaminhamento a centro de queimados"
-      ],
-      [
-        "≥ 20% no adulto",
-        "Reposição volêmica formal"
-      ],
-      [
-        "≥ 10% na criança",
-        "Reposição volêmica formal"
-      ]
-    ],
-    "table_note": "Limiares usados em diretrizes internacionais (ISBI, ABA); alguns protocolos usam 15% no adulto.",
-    "tips": [
-      "<strong>Não some o eritema</strong> (queimadura de 1º grau): é o erro mais comum e superestima a reposição.",
-      "Para queimaduras pequenas ou esparsas, use a palma da mão do paciente (com os dedos) como cerca de 1% da superfície corporal.",
-      "A regra dos nove (cabeça 9%, cada membro superior 9%, cada membro inferior 18%, tronco 18% + 18%, períneo 1%) é rápida no adulto, mas erra muito em crianças pequenas, que têm a cabeça proporcionalmente maior.",
-      "Reavalie a SCQ após a limpeza das lesões: a extensão real costuma mudar nas primeiras 24 a 48 horas.",
-      "Com a SCQ, calcule a reposição na fórmula de Parkland."
-    ],
     "sources": [
       [
         "ISBI Practice Guidelines Committee. ISBI Practice Guidelines for Burn Care. Burns, 2016.",
@@ -221,6 +195,14 @@
       [
         "Lundin K, Alsbjørn B. The 101 percent in Lund-Browder charts: a commentary. Burns, 2013.",
         "https://doi.org/10.1016/j.burns.2012.08.016"
+      ],
+      [
+        "ISBI2016 original guideline content hosted by burn society",
+        "https://saburnsociety.co.za/wp-content/uploads/2020/11/ISBI-Guideline-July-2017.pdf"
+      ],
+      [
+        "ABA current referral guidance,retrieved2026-10-04",
+        "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral"
       ]
     ],
     "cases": [
@@ -288,9 +270,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -299,17 +278,443 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:47.944Z",
+      "total": 834,
+      "passed": 834,
+      "sourceRowCount": 834,
+      "uniqueApiInputCount": 834,
+      "sourceContextCount": 834,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "7087580ebcad5bb8d83ac80265e3d110ebcf08d717e6e40f01988150f1cd908b",
+        "total": 834,
+        "bankRowCount": 834,
+        "uniqueApiInputCount": 834,
+        "sourceContextCount": 834,
+        "fullStoredSourceRows": 918,
+        "localRejectionContractCount": 84,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+            "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+          "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "Czech2020exact100percentchart: all6agecodes,12regions ×6fractionpoints;64selectedsixregionbinarycombinations plus16allregionprofiles/fullbody eachage. Coefficient/weighted sumonly. Only selected unrounded/raw numerical fields.",
+      "sourceEvidence": {
+        "review": {
+          "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+          "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+        },
+        "reading": {
+          "edition": "CzechMinistryHealth2020 massburnplan adult/pediatric100percent regional variant; ISBI2016 assessment recommendation only",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/root-source34-primary-r3/czech-burn-plan2020.html",
+              "sha256": "48f3b19c3b3201dd70da8dbd05ba67dfd8797d489f3407fa322d3a50a56e9b18",
+              "personallyReadPages": [],
+              "scope": "Personally read webadult/pediatricregional table, bothlimbs explicit and sixagecolumns; page states2020authorship."
+            },
+            {
+              "file": "reports/review-20261003/root-source34-primary-r2/isbi2016-society.pdf",
+              "sha256": "2523e5c6f1c8b118ff6aa4c2b1b8e1ca30f2d4f65cf9d98ee595e60e4cae0904",
+              "personallyReadPages": [
+                9,
+                11
+              ],
+              "scope": "Personally read standardizedTBSA recommendation and source bibliography; original1944coefficients not printed/read."
+            }
+          ],
+          "excluded": [
+            "OriginalLundBrowder1944conformance, otherinstitutional4/6handvariants, clinical region assessment and16–17year age choice. Interveningyears grouped locally, source has discreteagecolumns."
+          ]
+        }
+      },
+      "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+      "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+          "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+        },
+        "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/superficie-corporal-queimada/calculator.js",
+          "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/superficie-corporal-queimada/calculator.js",
+          "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/superficie-corporal-queimada/calculator.js",
+          "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+        }
+      ],
+      "qualifications": [
+        "Localagegrouping/intermediateages16–17, clinical region assessment and original1944conformance excluded. Zeroarea vectors separate local rejects.",
+        "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Lund Browder:regiõesporidade; implementação 100% comnota Lundin Alsbjorn 2013 sobre 101%; contexto ISBI 2016",
+    "implementationVersion": "superficie-corporal-queimada@native-2026-10-03+e7002e68b92d",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/27542292/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Para cada região, informe quanto dela está queimado (2º e 3º graus). A SCQ é a soma de (porcentagem do corpo da região × fração queimada). Regiões fixas (% do corpo): pescoço 2; tronco anterior 13; tronco posterior 13; nádegas 5; genitais 1; braços 8; antebraços 6; mãos 5; pés 7. Regiões que variam com a idade (lactente → adulto): cabeça 19 → 17 → 13 → 11 → 9 → 7; coxas 11 → 13 → 16 → 17 → 18 → 19; pernas 10 → 10 → 11 → 12 → 13 → 14.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Menos de 1 ano",
+              "1": "1 a 4 anos",
+              "5": "5 a 9 anos",
+              "10": "10 a 14 anos",
+              "15": "15 anos",
+              "a": "Adulto"
+            }
+          },
+          {
+            "key": "cabeca",
+            "label": "Cabeça (face e couro cabeludo)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "pescoco",
+            "label": "Pescoço",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "tronco_ant",
+            "label": "Tronco anterior",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "tronco_post",
+            "label": "Tronco posterior",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "nadegas",
+            "label": "Nádegas (as duas)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "genitais",
+            "label": "Genitais",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "bracos",
+            "label": "Braços (os dois)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "antebracos",
+            "label": "Antebraços (os dois)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "maos",
+            "label": "Mãos (as duas)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "coxas",
+            "label": "Coxas (as duas)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "pernas",
+            "label": "Pernas (as duas)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "pes",
+            "label": "Pés (os dois)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "% da região",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "63e535d5529de2294288030f2d956b05c037d6264d3b4ea12dada8e7c95975de"
+      },
+      "sourceEditions": [
+        {
+          "citation": "ISBI Practice Guidelines Committee. ISBI Practice Guidelines for Burn Care. Burns, 2016.",
+          "url": "https://doi.org/10.1016/j.burns.2016.05.013",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "ISBI Practice Guidelines for Burn Care.",
+            "year": "2016",
+            "firstPublicationDate": "2016-08-01",
+            "doi": "10.1016/j.burns.2016.05.013",
+            "pmid": "27542292",
+            "journal": "Burns : journal of the International Society for Burn Injuries",
+            "authors": "ISBI Practice Guidelines Committee, Steering Subcommittee, Advisory Subcommittee."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/27542292/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "4875f7bb2a3e8c8068ff34c60fd584b81e8c48634cbf196c4153a034493131ec",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lundin K, Alsbjørn B. The 101 percent in Lund-Browder charts: a commentary. Burns, 2013.",
+          "url": "https://doi.org/10.1016/j.burns.2012.08.016",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The 101 percent in Lund-Browder charts--a commentary.",
+            "year": "2013",
+            "firstPublicationDate": "2012-09-11",
+            "doi": "10.1016/j.burns.2012.08.016",
+            "pmid": "22980775",
+            "journal": "Burns : journal of the International Society for Burn Injuries",
+            "authors": "Lundin K, Alsbjørn B."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/22980775/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:47.944Z",
+        "total": 834,
+        "passed": 834,
+        "sourceRowCount": 834,
+        "uniqueApiInputCount": 834,
+        "sourceContextCount": 834,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "7087580ebcad5bb8d83ac80265e3d110ebcf08d717e6e40f01988150f1cd908b",
+          "total": 834,
+          "bankRowCount": 834,
+          "uniqueApiInputCount": 834,
+          "sourceContextCount": 834,
+          "fullStoredSourceRows": 918,
+          "localRejectionContractCount": 84,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+              "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+            "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "Czech2020exact100percentchart: all6agecodes,12regions ×6fractionpoints;64selectedsixregionbinarycombinations plus16allregionprofiles/fullbody eachage. Coefficient/weighted sumonly. Only selected unrounded/raw numerical fields.",
+        "sourceEvidence": {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+            "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+          },
+          "reading": {
+            "edition": "CzechMinistryHealth2020 massburnplan adult/pediatric100percent regional variant; ISBI2016 assessment recommendation only",
+            "evidence": [
+              {
+                "file": "reports/review-20261003/root-source34-primary-r3/czech-burn-plan2020.html",
+                "sha256": "48f3b19c3b3201dd70da8dbd05ba67dfd8797d489f3407fa322d3a50a56e9b18",
+                "personallyReadPages": [],
+                "scope": "Personally read webadult/pediatricregional table, bothlimbs explicit and sixagecolumns; page states2020authorship."
+              },
+              {
+                "file": "reports/review-20261003/root-source34-primary-r2/isbi2016-society.pdf",
+                "sha256": "2523e5c6f1c8b118ff6aa4c2b1b8e1ca30f2d4f65cf9d98ee595e60e4cae0904",
+                "personallyReadPages": [
+                  9,
+                  11
+                ],
+                "scope": "Personally read standardizedTBSA recommendation and source bibliography; original1944coefficients not printed/read."
+              }
+            ],
+            "excluded": [
+              "OriginalLundBrowder1944conformance, otherinstitutional4/6handvariants, clinical region assessment and16–17year age choice. Interveningyears grouped locally, source has discreteagecolumns."
+            ]
+          }
+        },
+        "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+        "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+            "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+          },
+          "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/superficie-corporal-queimada/calculator.js",
+            "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/superficie-corporal-queimada/calculator.js",
+            "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/superficie-corporal-queimada/calculator.js",
+            "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+          }
+        ],
+        "qualifications": [
+          "Localagegrouping/intermediateages16–17, clinical region assessment and original1944conformance excluded. Zeroarea vectors separate local rejects.",
+          "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+    },
+    "limits": "Inclua somente áreas de queimadura de espessura parcial ou total; queimaduras superficiais não entram na superfície corporal queimada. Registre a fração realmente queimada de cada região e a idade, pois a proporção entre cabeça e membros muda na infância. A regra dos nove é mais adequada ao adulto; Lund–Browder faz ajuste etário. Profundidade, localização e lesão inalatória exigem avaliação separada. A porcentagem isolada não define reposição de fluidos ou encaminhamento, e a tabela regional original não foi integralmente conferida nesta revisão.",
+    "limitsEvidence": {
+      "status": "direct-primary-guideline-content-and-official-institutional-body-read",
+      "sources": [
+        {
+          "url": "https://saburnsociety.co.za/wp-content/uploads/2020/11/ISBI-Guideline-July-2017.pdf",
+          "edition": "ISBI2016 original guideline content hosted by burn society",
+          "readScope": "Direct primary-content PDF InitialassessmentRecommendation2/considerations,printedp9:adultnines,childLundBrowder,partialregions,ownhand and depth/site. Named section only."
+        },
+        {
+          "url": "https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral",
+          "edition": "ABA current referral guidance,retrieved2026-10-04",
+          "readScope": "Direct official body:superficialexcludedTBSA;partial/full included;adultnines/childadjustment;site,depth,inhalation separate."
+        },
+        {
+          "url": "https://doi.org/10.1016/j.burns.2012.08.016",
+          "edition": "2012/2013Lund–Browder table commentary",
+          "readScope": "Identity only;original regional table not newly read."
+        }
+      ],
+      "populationScope": "Age-adjusted fraction of partial/full-thickness burned surface;not every red/superficial area.",
+      "remainingChecks": [
+        "Original regional100% versus101% table commentary not read.",
+        "No fluid prescription or universalreferral validated."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/superficie-corporal-queimada/calculator.js",
+    "bytes": 6841,
+    "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "305113dd18e7959c38b3a09985136e2b3f3d7235e2de7b9037f6233f382da6c4",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "b98bf5fa55818729886324c2d6dc62e60b85099beb12107eb8ae45db2887bb93",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "b98bf5fa55818729886324c2d6dc62e60b85099beb12107eb8ae45db2887bb93",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

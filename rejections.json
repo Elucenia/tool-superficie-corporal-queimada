@@ -1,0 +1,1404 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "tronco_ant": 100,
+      "bracos": 50
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "idade": "",
+      "tronco_ant": 100,
+      "bracos": 50
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option idade",
+    "input": {
+      "idade": "__ELUCENIA_INVALID_OPTION__",
+      "tronco_ant": 100,
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum cabeca",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "cabeca": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cabeca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pescoco",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pescoco": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pescoco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": "NaN",
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": "Infinity",
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": "1e309",
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": "invalid",
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": {},
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": true,
+      "bracos": 50
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": -1,
+      "bracos": 50
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tronco_ant",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 110,
+      "bracos": 50
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tronco_ant"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tronco_post",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "tronco_post": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tronco_post"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum nadegas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "nadegas": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nadegas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum genitais",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "genitais": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "genitais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum bracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "bracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum antebracos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "antebracos": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "antebracos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum maos",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "maos": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "maos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum coxas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "coxas": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "coxas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pernas",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pernas": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pernas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pes",
+    "input": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50,
+      "pes": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pes"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

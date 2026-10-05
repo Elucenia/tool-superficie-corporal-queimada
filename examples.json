@@ -1,6 +1,14 @@
 [
   {
-    "label": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+    "id": "superficie-corporal-queimada",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+    "originalInput": {
+      "idade": "a",
+      "tronco_ant": 100,
+      "bracos": 50
+    },
     "input": {
       "idade": "a",
       "tronco_ant": 100,
@@ -12,15 +20,35 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "idade": "a",
-      "tronco_ant": 100,
-      "bracos": 50
+    "recordedResult": {
+      "main": [
+        "17,0",
+        "% SCQ"
+      ],
+      "label": "Superfície corporal queimada (Lund-Browder)",
+      "raw": {
+        "scq": 17
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+    "id": "superficie-corporal-queimada",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+    "originalInput": {
+      "idade": "a",
+      "coxas": 100,
+      "pernas": 100
+    },
     "input": {
       "idade": "a",
       "coxas": 100,
@@ -32,15 +60,34 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "idade": "a",
-      "coxas": 100,
-      "pernas": 100
+    "recordedResult": {
+      "main": [
+        "33,0",
+        "% SCQ"
+      ],
+      "label": "Superfície corporal queimada (Lund-Browder)",
+      "raw": {
+        "scq": 33
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+    "id": "superficie-corporal-queimada",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+    "originalInput": {
+      "idade": "0",
+      "cabeca": 50
+    },
     "input": {
       "idade": "0",
       "cabeca": 50
@@ -51,14 +98,34 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "idade": "0",
-      "cabeca": 50
+    "recordedResult": {
+      "main": [
+        "9,5",
+        "% SCQ"
+      ],
+      "label": "Superfície corporal queimada (Lund-Browder)",
+      "raw": {
+        "scq": 9.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Criança de 3 anos: cabeça inteira (17) = 17%",
+    "id": "superficie-corporal-queimada",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+    "originalInput": {
+      "idade": "1",
+      "cabeca": 100
+    },
     "input": {
       "idade": "1",
       "cabeca": 100
@@ -69,23 +136,49 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "idade": "1",
-      "cabeca": 100
+    "recordedResult": {
+      "main": [
+        "17,0",
+        "% SCQ"
+      ],
+      "label": "Superfície corporal queimada (Lund-Browder)",
+      "raw": {
+        "scq": 17
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Nenhuma região informada: erro",
+    "id": "superficie-corporal-queimada",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Nenhuma região informada: erro",
+    "originalInput": {
+      "idade": "a"
+    },
     "input": {
       "idade": "a"
     },
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "idade": "a"
+    "recordedResult": {
+      "error": "Informe o percentual queimado de ao menos uma região."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
