@@ -1,0 +1,305 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "superficie-corporal-queimada",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "aa19bc4f4426c43d09785904ea2db799cc3d1dad",
+    "oldEngineSha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c",
+    "currentEngineSha256": "9b04e0dfaf9e75a64f125e1580373f09cb53ec03f8f22779ea213c768e49ba06"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+      "input": {
+        "idade": "a",
+        "tronco_ant": 100,
+        "bracos": 50
+      },
+      "publicOutput": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "17,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 17
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scq": 17
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "17,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "level": "mid",
+        "verdict": "SCQ ≥ 10%: critério de encaminhamento a centro de queimados",
+        "rows": [
+          [
+            "Cabeça (tabela da idade)",
+            "7,0% do corpo"
+          ],
+          [
+            "Coxas (as duas)",
+            "19,0% do corpo"
+          ],
+          [
+            "Pernas (as duas)",
+            "14,0% do corpo"
+          ]
+        ],
+        "note": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+        "raw": {
+          "scq": 17
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+      "input": {
+        "idade": "a",
+        "coxas": 100,
+        "pernas": 100
+      },
+      "publicOutput": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "33,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 33
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scq": 33
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "33,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "level": "high",
+        "verdict": "Queimadura extensa: reposição volêmica formal (fórmula de Parkland ou equivalente)",
+        "rows": [
+          [
+            "Cabeça (tabela da idade)",
+            "7,0% do corpo"
+          ],
+          [
+            "Coxas (as duas)",
+            "19,0% do corpo"
+          ],
+          [
+            "Pernas (as duas)",
+            "14,0% do corpo"
+          ]
+        ],
+        "note": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+        "raw": {
+          "scq": 33
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+      "input": {
+        "idade": "0",
+        "cabeca": 50
+      },
+      "publicOutput": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "9,5",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 9.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scq": 9.5
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9,5",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "level": "low",
+        "verdict": "Queimadura de menor extensão: avaliar profundidade, local e critérios de encaminhamento",
+        "rows": [
+          [
+            "Cabeça (tabela da idade)",
+            "19,0% do corpo"
+          ],
+          [
+            "Coxas (as duas)",
+            "11,0% do corpo"
+          ],
+          [
+            "Pernas (as duas)",
+            "10,0% do corpo"
+          ]
+        ],
+        "note": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+        "raw": {
+          "scq": 9.5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+      "input": {
+        "idade": "1",
+        "cabeca": 100
+      },
+      "publicOutput": {
+        "id": "superficie-corporal-queimada",
+        "main": [
+          "17,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "raw": {
+          "scq": 17
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scq": 17
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "17,0",
+          "% SCQ"
+        ],
+        "label": "Superfície corporal queimada (Lund-Browder)",
+        "level": "high",
+        "verdict": "Queimadura extensa: reposição volêmica formal (fórmula de Parkland ou equivalente)",
+        "rows": [
+          [
+            "Cabeça (tabela da idade)",
+            "17,0% do corpo"
+          ],
+          [
+            "Coxas (as duas)",
+            "13,0% do corpo"
+          ],
+          [
+            "Pernas (as duas)",
+            "10,0% do corpo"
+          ]
+        ],
+        "note": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+        "raw": {
+          "scq": 17
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Nenhuma região informada: erro",
+      "input": {
+        "idade": "a"
+      },
+      "publicOutput": {
+        "error": "Informe o percentual queimado de ao menos uma região.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

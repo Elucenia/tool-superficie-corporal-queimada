@@ -1,0 +1,2631 @@
+{
+  "id": "superficie-corporal-queimada",
+  "implementationVersion": "superficie-corporal-queimada@native-2026-10-05+9b04e0dfaf9e",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeça (tabela da idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "7,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coxas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "19,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pernas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "14,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SCQ ≥ 10%: critério de encaminhamento a centro de queimados",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeça (tabela da idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "7,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coxas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "19,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pernas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "14,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Queimadura extensa: reposição volêmica formal (fórmula de Parkland ou equivalente)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeça (tabela da idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "19,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coxas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "11,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pernas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Queimadura de menor extensão: avaliar profundidade, local e critérios de encaminhamento",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeça (tabela da idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "17,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Coxas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "13,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Pernas (as duas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0% do corpo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Queimadura extensa: reposição volêmica formal (fórmula de Parkland ou equivalente)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Some só queimaduras de 2º e 3º graus: o eritema (1º grau) não entra na SCQ.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Head (age table)",
+                "locale": "en",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Thighs (both)",
+                "locale": "en",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Lower legs (both)",
+                "locale": "en",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "TBSA ≥ 10%: referral criterion to a burn center",
+            "locale": "en",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.",
+            "locale": "en",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Head (age table)",
+                "locale": "en",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Thighs (both)",
+                "locale": "en",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Lower legs (both)",
+                "locale": "en",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Extensive burn: formal fluid resuscitation (Parkland formula or equivalent)",
+            "locale": "en",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.",
+            "locale": "en",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Head (age table)",
+                "locale": "en",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "19.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Thighs (both)",
+                "locale": "en",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "11.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Lower legs (both)",
+                "locale": "en",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Smaller burn: assess depth, location, and referral criteria",
+            "locale": "en",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.",
+            "locale": "en",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Head (age table)",
+                "locale": "en",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "17.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Thighs (both)",
+                "locale": "en",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "13.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Lower legs (both)",
+                "locale": "en",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10.0% of the body",
+                "locale": "en",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Extensive burn: formal fluid resuscitation (Parkland formula or equivalent)",
+            "locale": "en",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.",
+            "locale": "en",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeza (tabla de la edad)",
+                "locale": "es",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Muslos (ambos)",
+                "locale": "es",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Piernas (ambas)",
+                "locale": "es",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SCQ ≥ 10%: criterio de derivación a un centro de quemados",
+            "locale": "es",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.",
+            "locale": "es",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeza (tabla de la edad)",
+                "locale": "es",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Muslos (ambos)",
+                "locale": "es",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Piernas (ambas)",
+                "locale": "es",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Quemadura extensa: reposición volémica formal (fórmula de Parkland o equivalente)",
+            "locale": "es",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.",
+            "locale": "es",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeza (tabla de la edad)",
+                "locale": "es",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "19,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Muslos (ambos)",
+                "locale": "es",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "11,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Piernas (ambas)",
+                "locale": "es",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Quemadura de menor extensión: evaluar profundidad, localización y criterios de derivación",
+            "locale": "es",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.",
+            "locale": "es",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Cabeza (tabla de la edad)",
+                "locale": "es",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "17,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Muslos (ambos)",
+                "locale": "es",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "13,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Piernas (ambas)",
+                "locale": "es",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0% del cuerpo",
+                "locale": "es",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Quemadura extensa: reposición volémica formal (fórmula de Parkland o equivalente)",
+            "locale": "es",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.",
+            "locale": "es",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tête (tableau selon l’âge)",
+                "locale": "fr",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cuisses (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Jambes (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SCQ ≥ 10 % : critère d’orientation vers un centre des grands brûlés",
+            "locale": "fr",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.",
+            "locale": "fr",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tête (tableau selon l’âge)",
+                "locale": "fr",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cuisses (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Jambes (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Brûlure étendue : remplissage volémique formel (formule de Parkland ou équivalent)",
+            "locale": "fr",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.",
+            "locale": "fr",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tête (tableau selon l’âge)",
+                "locale": "fr",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "19,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cuisses (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "11,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Jambes (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Brûlure de moindre étendue : évaluer la profondeur, la localisation et les critères d’orientation",
+            "locale": "fr",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.",
+            "locale": "fr",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tête (tableau selon l’âge)",
+                "locale": "fr",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "17,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cuisses (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "13,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Jambes (les deux)",
+                "locale": "fr",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0 % du corps",
+                "locale": "fr",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Brûlure étendue : remplissage volémique formel (formule de Parkland ou équivalent)",
+            "locale": "fr",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.",
+            "locale": "fr",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Kopf (Alterstabelle)",
+                "locale": "de",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oberschenkel (beidseits)",
+                "locale": "de",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Unterschenkel (beide)",
+                "locale": "de",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "KOF ≥ 10 %: Überweisungskriterium an ein Brandverletztenzentrum",
+            "locale": "de",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.",
+            "locale": "de",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Kopf (Alterstabelle)",
+                "locale": "de",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oberschenkel (beidseits)",
+                "locale": "de",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Unterschenkel (beide)",
+                "locale": "de",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ausgedehnte Verbrennung: formale Volumensubstitution (Parkland-Formel oder gleichwertig)",
+            "locale": "de",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.",
+            "locale": "de",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Kopf (Alterstabelle)",
+                "locale": "de",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "19,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oberschenkel (beidseits)",
+                "locale": "de",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "11,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Unterschenkel (beide)",
+                "locale": "de",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Kleinere Verbrennung: Tiefe, Lokalisation und Überweisungskriterien beurteilen",
+            "locale": "de",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.",
+            "locale": "de",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Kopf (Alterstabelle)",
+                "locale": "de",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "17,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oberschenkel (beidseits)",
+                "locale": "de",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "13,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Unterschenkel (beide)",
+                "locale": "de",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0 % des Körpers",
+                "locale": "de",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ausgedehnte Verbrennung: formale Volumensubstitution (Parkland-Formel oder gleichwertig)",
+            "locale": "de",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.",
+            "locale": "de",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Testa (tabella per età)",
+                "locale": "it",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cosce (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gambe (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SCQ ≥ 10%: criterio di invio a un centro ustioni",
+            "locale": "it",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.",
+            "locale": "it",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Testa (tabella per età)",
+                "locale": "it",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "7,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cosce (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "19,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gambe (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "14,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ustione estesa: rianimazione fluidica formale (formula di Parkland o equivalente)",
+            "locale": "it",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.",
+            "locale": "it",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Testa (tabella per età)",
+                "locale": "it",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "19,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cosce (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "11,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gambe (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ustione di minore estensione: valutare profondità, sede e criteri di invio",
+            "locale": "it",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.",
+            "locale": "it",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Testa (tabella per età)",
+                "locale": "it",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "17,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Cosce (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "13,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gambe (entrambe)",
+                "locale": "it",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "10,0% del corpo",
+                "locale": "it",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ustione estesa: rianimazione fluidica formale (formula di Parkland o equivalente)",
+            "locale": "it",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.",
+            "locale": "it",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الرأس (جدول العمر)",
+                "locale": "ar",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "٧٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الفخذان (كلاهما)",
+                "locale": "ar",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "١٩٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الساقان (كلتاهما)",
+                "locale": "ar",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "١٤٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "SCQ ≥ 10%: معيار الإحالة إلى مركز الحروق",
+            "locale": "ar",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "تُحتسب فقط حروق الدرجة الثانية والثالثة: فالحمامى (الدرجة الأولى) لا تُدرج ضمن SCQ.",
+            "locale": "ar",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الرأس (جدول العمر)",
+                "locale": "ar",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "٧٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الفخذان (كلاهما)",
+                "locale": "ar",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "١٩٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الساقان (كلتاهما)",
+                "locale": "ar",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "١٤٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حرق واسع النطاق: الإنعاش بالسوائل بشكل رسمي (معادلة باركلاند أو ما يعادلها)",
+            "locale": "ar",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "تُحتسب فقط حروق الدرجة الثانية والثالثة: فالحمامى (الدرجة الأولى) لا تُدرج ضمن SCQ.",
+            "locale": "ar",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الرأس (جدول العمر)",
+                "locale": "ar",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "١٩٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الفخذان (كلاهما)",
+                "locale": "ar",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "١١٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الساقان (كلتاهما)",
+                "locale": "ar",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "١٠٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حرق أقل امتدادًا: قيّم العمق والموقع ومعايير الإحالة",
+            "locale": "ar",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "تُحتسب فقط حروق الدرجة الثانية والثالثة: فالحمامى (الدرجة الأولى) لا تُدرج ضمن SCQ.",
+            "locale": "ar",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الرأس (جدول العمر)",
+                "locale": "ar",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "١٧٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الفخذان (كلاهما)",
+                "locale": "ar",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "١٣٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الساقان (كلتاهما)",
+                "locale": "ar",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "١٠٫٠% من الجسم",
+                "locale": "ar",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حرق واسع النطاق: الإنعاش بالسوائل بشكل رسمي (معادلة باركلاند أو ما يعادلها)",
+            "locale": "ar",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "تُحتسب فقط حروق الدرجة الثانية والثالثة: فالحمامى (الدرجة الأولى) لا تُدرج ضمن SCQ.",
+            "locale": "ar",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "头部（按年龄表）",
+                "locale": "zh",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "身体的7.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "身体的19.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "小腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "身体的14.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "TBSA ≥ 10%：转诊至烧伤中心的标准",
+            "locale": "zh",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "仅计算二度和三度烧伤：红斑（一级）不计入TBSA。",
+            "locale": "zh",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "头部（按年龄表）",
+                "locale": "zh",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "身体的7.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "身体的19.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "小腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "身体的14.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "广泛烧伤：正式液体复苏（Parkland公式或等效方案）",
+            "locale": "zh",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "仅计算二度和三度烧伤：红斑（一级）不计入TBSA。",
+            "locale": "zh",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "头部（按年龄表）",
+                "locale": "zh",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "身体的19.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "身体的11.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "小腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "身体的10.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "较小面积烧伤：评估深度、部位和转诊标准",
+            "locale": "zh",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "仅计算二度和三度烧伤：红斑（一级）不计入TBSA。",
+            "locale": "zh",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "头部（按年龄表）",
+                "locale": "zh",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "身体的17.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "身体的13.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "小腿（双侧）",
+                "locale": "zh",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "身体的10.0%",
+                "locale": "zh",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "广泛烧伤：正式液体复苏（Parkland公式或等效方案）",
+            "locale": "zh",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "仅计算二度和三度烧伤：红斑（一级）不计入TBSA。",
+            "locale": "zh",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "頭部（年齢表）",
+                "locale": "ja",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "体の7.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "体の19.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "下腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "体の14.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "TBSA ≥ 10%: 熱傷センターへの紹介基準",
+            "locale": "ja",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "2度および3度熱傷のみが対象です。紅斑（1度）はTBSAに含めません。",
+            "locale": "ja",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "頭部（年齢表）",
+                "locale": "ja",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "体の7.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "体の19.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "下腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "体の14.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "広範囲熱傷：正式な輸液蘇生（Parkland式または同等式）",
+            "locale": "ja",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "2度および3度熱傷のみが対象です。紅斑（1度）はTBSAに含めません。",
+            "locale": "ja",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "頭部（年齢表）",
+                "locale": "ja",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "体の19.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "体の11.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "下腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "体の10.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "小範囲熱傷：深さ、部位、紹介基準を評価する",
+            "locale": "ja",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "2度および3度熱傷のみが対象です。紅斑（1度）はTBSAに含めません。",
+            "locale": "ja",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "頭部（年齢表）",
+                "locale": "ja",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "体の17.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "大腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "体の13.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "下腿（両側）",
+                "locale": "ja",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "体の10.0%",
+                "locale": "ja",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "広範囲熱傷：正式な輸液蘇生（Parkland式または同等式）",
+            "locale": "ja",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "2度および3度熱傷のみが対象です。紅斑（1度）はTBSAに含めません。",
+            "locale": "ja",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Adulto: tronco anterior inteiro (13) + metade dos braços (4) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सिर (आयु तालिका)",
+                "locale": "hi",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "शरीर का 7.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "जाँघें (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "शरीर का 19.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "निचले पैर (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "शरीर का 14.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "TBSA ≥ 10%: बर्न सेंटर में रेफरल का मानदंड",
+            "locale": "hi",
+            "template": "documented-authored-61a58cad72b3563d703a"
+          },
+          "note": {
+            "text": "केवल 2º और 3º डिग्री के जलने गिने जाते हैं: एरिथेमा (1º डिग्री) को TBSA में शामिल नहीं किया जाता।",
+            "locale": "hi",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Adulto: coxas (19) e pernas (14) inteiras = 33%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सिर (आयु तालिका)",
+                "locale": "hi",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "शरीर का 7.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "जाँघें (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "शरीर का 19.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "निचले पैर (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "शरीर का 14.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "विस्तृत जलन: औपचारिक द्रव पुनर्जीवन (Parkland सूत्र या समतुल्य)",
+            "locale": "hi",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "केवल 2º और 3º डिग्री के जलने गिने जाते हैं: एरिथेमा (1º डिग्री) को TBSA में शामिल नहीं किया जाता।",
+            "locale": "hi",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Lactente: metade da cabeça (19 × 0,5) = 9,5%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सिर (आयु तालिका)",
+                "locale": "hi",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "शरीर का 19.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "जाँघें (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "शरीर का 11.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  11
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "निचले पैर (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "शरीर का 10.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम विस्तार वाली जलन: गहराई, स्थान और रेफरल मानदंड का मूल्यांकन करें",
+            "locale": "hi",
+            "template": "documented-authored-c0d12db107c1f0d390b6"
+          },
+          "note": {
+            "text": "केवल 2º और 3º डिग्री के जलने गिने जाते हैं: एरिथेमा (1º डिग्री) को TBSA में शामिल नहीं किया जाता।",
+            "locale": "hi",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Criança de 3 anos: cabeça inteira (17) = 17%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सिर (आयु तालिका)",
+                "locale": "hi",
+                "template": "documented-authored-100d227480df100e38c2"
+              },
+              "value": {
+                "text": "शरीर का 17.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "जाँघें (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-585d61d309f87de41629"
+              },
+              "value": {
+                "text": "शरीर का 13.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  13
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "निचले पैर (दोनों)",
+                "locale": "hi",
+                "template": "documented-authored-df594f0e52f7705feb06"
+              },
+              "value": {
+                "text": "शरीर का 10.0%",
+                "locale": "hi",
+                "template": "documented-authored-92230c80f3681295fd71",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "विस्तृत जलन: औपचारिक द्रव पुनर्जीवन (Parkland सूत्र या समतुल्य)",
+            "locale": "hi",
+            "template": "documented-authored-1b73989c160a92908c6e"
+          },
+          "note": {
+            "text": "केवल 2º और 3º डिग्री के जलने गिने जाते हैं: एरिथेमा (1º डिग्री) को TBSA में शामिल नहीं किया जाता।",
+            "locale": "hi",
+            "template": "documented-authored-7a89cc9628bf26c2ea16"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

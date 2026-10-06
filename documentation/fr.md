@@ -142,3 +142,59 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+SCQ ≥ 10 % : critère d’orientation vers un centre des grands brûlés
+
+| Détails du résultat | |
+| --- | --- |
+| Tête (tableau selon l’âge) | 7,0 % du corps |
+| Cuisses (les deux) | 19,0 % du corps |
+| Jambes (les deux) | 14,0 % du corps |
+
+Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.
+
+
+### 2
+
+Brûlure étendue : remplissage volémique formel (formule de Parkland ou équivalent)
+
+| Détails du résultat | |
+| --- | --- |
+| Tête (tableau selon l’âge) | 7,0 % du corps |
+| Cuisses (les deux) | 19,0 % du corps |
+| Jambes (les deux) | 14,0 % du corps |
+
+Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.
+
+
+### 3
+
+Brûlure de moindre étendue : évaluer la profondeur, la localisation et les critères d’orientation
+
+| Détails du résultat | |
+| --- | --- |
+| Tête (tableau selon l’âge) | 19,0 % du corps |
+| Cuisses (les deux) | 11,0 % du corps |
+| Jambes (les deux) | 10,0 % du corps |
+
+Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.
+
+
+### 4
+
+Brûlure étendue : remplissage volémique formel (formule de Parkland ou équivalent)
+
+| Détails du résultat | |
+| --- | --- |
+| Tête (tableau selon l’âge) | 17,0 % du corps |
+| Cuisses (les deux) | 13,0 % du corps |
+| Jambes (les deux) | 10,0 % du corps |
+
+Seules les brûlures du 2e et du 3e degré comptent : l’érythème (1er degré) n’est pas inclus dans la SCQ.
+

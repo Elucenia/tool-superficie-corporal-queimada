@@ -142,3 +142,59 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+KOF ≥ 10 %: Überweisungskriterium an ein Brandverletztenzentrum
+
+| Ergebnisdetails | |
+| --- | --- |
+| Kopf (Alterstabelle) | 7,0 % des Körpers |
+| Oberschenkel (beidseits) | 19,0 % des Körpers |
+| Unterschenkel (beide) | 14,0 % des Körpers |
+
+Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.
+
+
+### 2
+
+Ausgedehnte Verbrennung: formale Volumensubstitution (Parkland-Formel oder gleichwertig)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Kopf (Alterstabelle) | 7,0 % des Körpers |
+| Oberschenkel (beidseits) | 19,0 % des Körpers |
+| Unterschenkel (beide) | 14,0 % des Körpers |
+
+Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.
+
+
+### 3
+
+Kleinere Verbrennung: Tiefe, Lokalisation und Überweisungskriterien beurteilen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Kopf (Alterstabelle) | 19,0 % des Körpers |
+| Oberschenkel (beidseits) | 11,0 % des Körpers |
+| Unterschenkel (beide) | 10,0 % des Körpers |
+
+Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.
+
+
+### 4
+
+Ausgedehnte Verbrennung: formale Volumensubstitution (Parkland-Formel oder gleichwertig)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Kopf (Alterstabelle) | 17,0 % des Körpers |
+| Oberschenkel (beidseits) | 13,0 % des Körpers |
+| Unterschenkel (beide) | 10,0 % des Körpers |
+
+Nur Verbrennungen 2. und 3. Grades zählen: Erythem (1. Grad) wird nicht in die KOF einbezogen.
+

@@ -142,3 +142,59 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+SCQ ≥ 10%: criterio de derivación a un centro de quemados
+
+| Detalles del resultado | |
+| --- | --- |
+| Cabeza (tabla de la edad) | 7,0% del cuerpo |
+| Muslos (ambos) | 19,0% del cuerpo |
+| Piernas (ambas) | 14,0% del cuerpo |
+
+Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.
+
+
+### 2
+
+Quemadura extensa: reposición volémica formal (fórmula de Parkland o equivalente)
+
+| Detalles del resultado | |
+| --- | --- |
+| Cabeza (tabla de la edad) | 7,0% del cuerpo |
+| Muslos (ambos) | 19,0% del cuerpo |
+| Piernas (ambas) | 14,0% del cuerpo |
+
+Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.
+
+
+### 3
+
+Quemadura de menor extensión: evaluar profundidad, localización y criterios de derivación
+
+| Detalles del resultado | |
+| --- | --- |
+| Cabeza (tabla de la edad) | 19,0% del cuerpo |
+| Muslos (ambos) | 11,0% del cuerpo |
+| Piernas (ambas) | 10,0% del cuerpo |
+
+Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.
+
+
+### 4
+
+Quemadura extensa: reposición volémica formal (fórmula de Parkland o equivalente)
+
+| Detalles del resultado | |
+| --- | --- |
+| Cabeza (tabla de la edad) | 17,0% del cuerpo |
+| Muslos (ambos) | 13,0% del cuerpo |
+| Piernas (ambas) | 10,0% del cuerpo |
+
+Solo cuentan las quemaduras de 2º y 3º grado: el eritema (1º grado) no se incluye en la SCQ.
+

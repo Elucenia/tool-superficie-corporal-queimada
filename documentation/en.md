@@ -142,3 +142,59 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+TBSA ≥ 10%: referral criterion to a burn center
+
+| Result details | |
+| --- | --- |
+| Head (age table) | 7.0% of the body |
+| Thighs (both) | 19.0% of the body |
+| Lower legs (both) | 14.0% of the body |
+
+Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.
+
+
+### 2
+
+Extensive burn: formal fluid resuscitation (Parkland formula or equivalent)
+
+| Result details | |
+| --- | --- |
+| Head (age table) | 7.0% of the body |
+| Thighs (both) | 19.0% of the body |
+| Lower legs (both) | 14.0% of the body |
+
+Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.
+
+
+### 3
+
+Smaller burn: assess depth, location, and referral criteria
+
+| Result details | |
+| --- | --- |
+| Head (age table) | 19.0% of the body |
+| Thighs (both) | 11.0% of the body |
+| Lower legs (both) | 10.0% of the body |
+
+Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.
+
+
+### 4
+
+Extensive burn: formal fluid resuscitation (Parkland formula or equivalent)
+
+| Result details | |
+| --- | --- |
+| Head (age table) | 17.0% of the body |
+| Thighs (both) | 13.0% of the body |
+| Lower legs (both) | 10.0% of the body |
+
+Only 2nd- and 3rd-degree burns count: erythema (1st degree) is not included in TBSA.
+

@@ -372,7 +372,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Lund Browder:regiõesporidade; implementação 100% comnota Lundin Alsbjorn 2013 sobre 101%; contexto ISBI 2016",
-    "implementationVersion": "superficie-corporal-queimada@native-2026-10-03+e7002e68b92d",
+    "implementationVersion": "superficie-corporal-queimada@native-2026-10-05+9b04e0dfaf9e",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/27542292/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -663,7 +663,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+      "implementationHash": "9b04e0dfaf9e75a64f125e1580373f09cb53ec03f8f22779ea213c768e49ba06",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "superficie-corporal-queimada@native-2026-10-03+e7002e68b92d",
+          "previousImplementationHash": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c",
+          "implementationHash": "9b04e0dfaf9e75a64f125e1580373f09cb53ec03f8f22779ea213c768e49ba06",
+          "scientificBodySha256": "ff0ed78f33b33a834d23e6a72b4add7632f9067ceca525564ea1a07084d2a970",
+          "metadataContractHash": "63e535d5529de2294288030f2d956b05c037d6264d3b4ea12dada8e7c95975de",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Inclua somente áreas de queimadura de espessura parcial ou total; queimaduras superficiais não entram na superfície corporal queimada. Registre a fração realmente queimada de cada região e a idade, pois a proporção entre cabeça e membros muda na infância. A regra dos nove é mais adequada ao adulto; Lund–Browder faz ajuste etário. Profundidade, localização e lesão inalatória exigem avaliação separada. A porcentagem isolada não define reposição de fluidos ou encaminhamento, e a tabela regional original não foi integralmente conferida nesta revisão.",
     "limitsEvidence": {
@@ -698,20 +726,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/superficie-corporal-queimada/calculator.js",
-    "bytes": 6841,
-    "sha256": "e7002e68b92d323d27297f06fa2526e018897469a44364acfd59fdc5504a660c"
+    "bytes": 7046,
+    "sha256": "9b04e0dfaf9e75a64f125e1580373f09cb53ec03f8f22779ea213c768e49ba06"
   },
-  "sourceToolSha256": "305113dd18e7959c38b3a09985136e2b3f3d7235e2de7b9037f6233f382da6c4",
+  "sourceToolSha256": "755fd206c09b57be901159550248e0ece19921b5dfd1c72be2165da1e92a4255",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "b98bf5fa55818729886324c2d6dc62e60b85099beb12107eb8ae45db2887bb93",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "b98bf5fa55818729886324c2d6dc62e60b85099beb12107eb8ae45db2887bb93",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

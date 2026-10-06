@@ -142,3 +142,59 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+SCQ ≥ 10%: criterio di invio a un centro ustioni
+
+| Dettagli del risultato | |
+| --- | --- |
+| Testa (tabella per età) | 7,0% del corpo |
+| Cosce (entrambe) | 19,0% del corpo |
+| Gambe (entrambe) | 14,0% del corpo |
+
+Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.
+
+
+### 2
+
+Ustione estesa: rianimazione fluidica formale (formula di Parkland o equivalente)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Testa (tabella per età) | 7,0% del corpo |
+| Cosce (entrambe) | 19,0% del corpo |
+| Gambe (entrambe) | 14,0% del corpo |
+
+Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.
+
+
+### 3
+
+Ustione di minore estensione: valutare profondità, sede e criteri di invio
+
+| Dettagli del risultato | |
+| --- | --- |
+| Testa (tabella per età) | 19,0% del corpo |
+| Cosce (entrambe) | 11,0% del corpo |
+| Gambe (entrambe) | 10,0% del corpo |
+
+Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.
+
+
+### 4
+
+Ustione estesa: rianimazione fluidica formale (formula di Parkland o equivalente)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Testa (tabella per età) | 17,0% del corpo |
+| Cosce (entrambe) | 13,0% del corpo |
+| Gambe (entrambe) | 10,0% del corpo |
+
+Contano solo le ustioni di 2° e 3° grado: l’eritema (1° grado) non è incluso nella SCQ.
+
